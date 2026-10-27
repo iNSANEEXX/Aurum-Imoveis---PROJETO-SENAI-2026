@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURUM | Imóveis de Alto Padrão</title>
+  <meta name="description" content="Imóveis exclusivos em Anápolis-GO.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <div class="logo">
+        <span class="logo-nome">AURUM</span>
+        <span class="logo-subtitulo">Imóveis de Alto Padrão</span>
+      </div>
+      <nav class="navegacao">
+        <a href="index.html" class="ativo">Início</a>
+        <a href="imoveis.html">Imóveis</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="destaque-principal">
+      <div class="container">
+        <h1>Encontre seu imóvel ideal</h1>
+        <p>Curadoria de imóveis de alto padrão em Anápolis-GO.</p>
+        <a href="imoveis.html" class="botao-principal">Ver Imóveis</a>
+      </div>
+    </section>
+
+    <section class="secao" id="destaques">
+      <div class="container">
+        <h2>Imóveis em Destaque</h2>
+        <p class="subtitulo">Seleção especial do nosso catálogo.</p>
+
+        <div class="grade-cartoes" id="home-grid">
+        </div>
+
+        <div style="text-align:center; margin-top:32px;">
+          <a href="imoveis.html" class="botao-contorno">Ver Todos os Imóveis</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" id="sobre">
+      <div class="container">
+        <h2>Sobre a AURUM</h2>
+        <p>
+          Somos uma imobiliária boutique especializada em imóveis de alto padrão.
+          Atendemos com discrição e profissionalismo clientes que buscam
+          residências exclusivas nos melhores endereços do Brasil.
+        </p>
+        <ul class="lista-sobre">
+          <li>✔ Mais de 18 anos de experiência</li>
+          <li>✔ Portfólio off-market exclusivo</li>
+          <li>✔ Due diligence completa em cada imóvel</li>
+          <li>✔ Atendimento personalizado e confidencial</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <p class="subtitulo">Fale conosco para mais informações ou para agendar uma visita.</p>
+
+        <form class="formulario-contato" onsubmit="handleForm(event)">
+          <div class="campo-formulario">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Seu nome completo" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" placeholder="(11) 99999-9999">
+          </div>
+          <div class="campo-formulario">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" rows="4" placeholder="Conte-nos o que procura..."></textarea>
+          </div>
+          <button type="submit" class="botao-principal" id="enviar">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <span><strong>AURUM</strong> Imóveis de Alto Padrão &copy; 2026</span>
+      <span> LTDA &nbsp;|&nbsp; +55 (62) 99527-3441</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
