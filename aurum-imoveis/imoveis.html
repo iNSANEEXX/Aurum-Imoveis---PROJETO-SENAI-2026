@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imóveis | AURUM</title>
+  <meta name="description" content="Catálogo de imóveis exclusivos AURUM.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-name">AURUM</span>
+        <span class="logo-sub">Imóveis de Alto Padrão</span>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="imoveis.html" class="active">Imóveis</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Título da página -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Início</a> / Imóveis</p>
+        <h1>Catálogo de Imóveis</h1>
+        <p>Explore nossa seleção de residências exclusivas.</p>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label for="f-type">Tipo</label>
+          <select id="f-type">
+            <option value="todos">Todos</option>
+            <option value="casas">Mansões &amp; Casas</option>
+            <option value="penthouses">Penthouses</option>
+            <option value="apartamentos">Apartamentos</option>
+            <option value="campo">Campo &amp; Fazendas</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="f-location">Cidade</label>
+          <select id="f-location">
+            <option value="todos">Todas</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="campo">Interior SP</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="f-price">Preço</label>
+          <select id="f-price">
+            <option value="todos">Qualquer</option>
+            <option value="ate20">Até R$ 20 Mi</option>
+            <option value="20a30">R$ 20 a 30 Mi</option>
+            <option value="acima30">Acima R$ 30 Mi</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="f-sort">Ordenar por</label>
+          <select id="f-sort">
+            <option value="padrao">Relevância</option>
+            <option value="menor-preco">Menor Preço</option>
+            <option value="maior-preco">Maior Preço</option>
+            <option value="maior-area">Maior Área</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>&nbsp;</label>
+          <button id="btn-reset" class="btn-outline">Limpar</button>
+        </div>
+      </div>
+
+      <!-- Busca por texto -->
+      <div class="filter-search">
+        <input type="text" id="f-keyword" placeholder="Buscar por nome, bairro ou características...">
+      </div>
+
+      <p id="results-count" class="results-count">Carregando...</p>
+
+      <div class="cards-grid" id="catalog-grid" style="margin-bottom:60px;">
+        <!-- preenchido pelo JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container footer-inner">
+      <span><strong>AURUM</strong> Imóveis de Alto Padrão &copy; 2026</span>
+      <span>CRECI 42.891-J &nbsp;|&nbsp; +55 (11) 3088-9400</span>
+    </div>
+  </footer>
+
+  <!-- Modal de Detalhes -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <img id="modal-img" src="" alt="Imóvel">
+      <div class="modal-body">
+        <span class="modal-badge" id="modal-badge"></span>
+        <h2 id="modal-title"></h2>
+        <p class="modal-location" id="modal-location"></p>
+        <div class="modal-specs" id="modal-specs"></div>
+        <p id="modal-desc"></p>
+        <div class="modal-price-row">
+          <span class="modal-price" id="modal-price"></span>
+          <a id="modal-whats" href="#" target="_blank" class="btn-primary">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

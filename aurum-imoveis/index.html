@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURUM | Imóveis de Alto Padrão</title>
+  <meta name="description" content="Imóveis exclusivos em São Paulo e Rio de Janeiro.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-name">AURUM</span>
+        <span class="logo-sub">Imóveis de Alto Padrão</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Início</a>
+        <a href="imoveis.html">Imóveis</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Encontre seu imóvel ideal</h1>
+        <p>Curadoria de imóveis de alto padrão em São Paulo, Rio de Janeiro e mais.</p>
+        <a href="imoveis.html" class="btn-primary">Ver Imóveis</a>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="section" id="destaques">
+      <div class="container">
+        <h2>Imóveis em Destaque</h2>
+        <p class="subtitle">Seleção especial do nosso catálogo.</p>
+
+        <div class="cards-grid" id="home-grid">
+          <!-- preenchido pelo JS -->
+        </div>
+
+        <div style="text-align:center; margin-top:32px;">
+          <a href="imoveis.html" class="btn-outline">Ver Todos os Imóveis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section section-gray" id="sobre">
+      <div class="container">
+        <h2>Sobre a AURUM</h2>
+        <p>
+          Somos uma imobiliária boutique especializada em imóveis de alto padrão.
+          Atendemos com discrição e profissionalismo clientes que buscam
+          residências exclusivas nos melhores endereços do Brasil.
+        </p>
+        <ul class="about-list">
+          <li>✔ Mais de 18 anos de experiência</li>
+          <li>✔ Portfólio off-market exclusivo</li>
+          <li>✔ Due diligence completa em cada imóvel</li>
+          <li>✔ Atendimento personalizado e confidencial</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section" id="contato">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <p class="subtitle">Fale conosco para mais informações ou para agendar uma visita.</p>
+
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" placeholder="(11) 99999-9999">
+          </div>
+          <div class="form-group">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" rows="4" placeholder="Conte-nos o que procura..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container footer-inner">
+      <span><strong>AURUM</strong> Imóveis de Alto Padrão &copy; 2026</span>
+      <span>CRECI 42.891-J &nbsp;|&nbsp; +55 (11) 3088-9400</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
